@@ -1,0 +1,62 @@
+<!--
+     > Use JavaScript to show the list of recipes. ✔️
+     > Output all the info for each recipe. ✔️
+     > Add an image path to each recipe. ✔️
+     > Be sure to show the image of each recipe. ✔️
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Recipes</title>
+    <!-- Placeholder for stylesheets -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/recipes.css">
+</head>
+<body>
+    <header class="stellar-header">
+        <div class="stellar-header-left-section">
+            <a href="index.html" class="header-link">
+                <img class="stellar-logo" src="images/stellar-logo.png" alt="Stellar Recipes Logo">
+                <img class="stellar-mobile-logo" src="images/stellar-mobile-logo.png" alt="Stellar Recipes Mobile Logo">
+            </a>
+        </div>
+
+        <div class="stellar-header-middle-section">
+            <input class="search-bar" type="text" placeholder="Search recipes...">
+
+            <button class="search-button">
+                <img class="search-icon" src="images/icons/search-icon.png" alt="Search">
+            </button>
+        </div>
+
+        <div class="stellar-header-right-section">
+            <a class="favorites-link header-link" href="favorites.html">
+                <img class="favorites-icon" src="images/icons/favorites-icon.png" alt="Favorites">
+                <div class="favorites-text">Favorites</div>
+            </a>
+
+            <a class="profile-link header-link" href="profile.html">
+                <img class="profile-icon" src="images/icons/profile-icon.png" alt="Profile">
+                <div class="profile-text">Profile</div>
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="recipes-grid js-recipes-grid">
+            <!-- Recipes will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <footer class="stellar-footer">
+        <p>&copy; 2024 Stellar Recipes. All rights reserved.</p>
+    </footer>
+
+    <!-- Placeholder for scripts -->
+    <script src="data/recipes.js"></script>
+    <script src="scripts/recipes.js"></script>
+</body>
+</html>

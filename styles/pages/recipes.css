@@ -1,0 +1,78 @@
+/* Main container styling */
+.main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipes grid layout */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Individual recipe card styling */
+.recipe-container {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe details */
+.recipe-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.recipe-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Add to favorites button */
+.add-to-favorites-button {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff6f00;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-favorites-button:hover {
+  background-color: #e65c00;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-favorites-button:active {
+  background-color: #cc4f00;
+  transform: translateY(2px);
+}
